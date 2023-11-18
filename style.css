@@ -46,7 +46,7 @@ nav img {
 
 .hero {
   position: relative;
-  height: 505px;
+  height: 700px;
   background: url("assets/background.jpg") center/cover no-repeat;
   color: #fff;
   text-align: center;
@@ -76,6 +76,12 @@ nav img {
 
 .hero-text p {
   margin: 0px;
+}
+
+.small-paragraph {
+  width: 700px;
+  font-size: 16px;
+  padding-top: 50px;
 }
 
 .hero-button {
@@ -114,4 +120,49 @@ nav img {
   background-color: #fff700;
   color: #000;
   text-decoration: none;
+}
+
+.site-footer {
+  background-color: #fff;
+  color: #000;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-bottom: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.social-icons img {
+  width: 40px;
+  height: 40px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+  background: url("assets/gym-background.jpg") center/cover no-repeat;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.membership-container{
+    background-color: #fff;
+    color: #000;
+    height: 90%;
+    width: 98%;
+    border-radius: 3%;
 }
