@@ -153,16 +153,61 @@ nav img {
   height: 100%;
   background: url("assets/gym-background.jpg") center/cover no-repeat;
   color: #fff;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.membership-container{
-    background-color: #fff;
-    color: #000;
-    height: 90%;
-    width: 98%;
-    border-radius: 3%;
+.membership-container {
+  background-color: #fff;
+  color: #000;
+  height: 90%;
+  width: 90%;
+  border-radius: 40px;
+  z-index: 1;
+  align-items: start;
+  padding: 30px;
+  display: flex; /* Add this line to make it a flex container */
+  justify-content: space-around; /* Add this line for spacing between cards */
+  flex-wrap: wrap;
+}
+
+.membership-container h2{
+  font-size: 46px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.membership-card {
+  border: #000 solid 2px;
+  border-radius: 15px;
+  padding-top: 15px;
+  margin-top: 20px;
+  width: 260px;
+  height: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.membership-card ul{
+  height: 200px;
+}
+
+.membership-title {
+  font-size: 26px;
+
+}
+
+.card-button {
+  padding: 10px 20px;
+  background-color: #fff700;
+  color: #000;
+  text-decoration: none;
+  z-index: 1;
+  /* margin-top: 150px; */
+  /* position: relative; */
+  /* top: 50%; */
+  transform: translateY(-50%);
 }
