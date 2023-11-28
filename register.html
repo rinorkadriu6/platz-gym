@@ -1,0 +1,63 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #131313;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="memberships.html">Memberships</a></li>
+                <li><a href="index.html">Products</a></li>
+            </ul>
+            <img src="assets/logo-transparent.png" alt="logo" />
+            <ul>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="index.html">Log in</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="register-container">
+        <div class="register-text">
+            <h1 style="font-size: 46px; font-family: Krona One;">Ready to transform?</h1>
+            <h2 style="font-size: 40px;">Let's get you started!</h2>
+            <p style="margin-top: 50px;">Why Register at Platz Gym?</p>
+            <p style="margin-top: 50px;">State-of-the-Art Facilities: Access cutting-edge gym equipment and facilities.
+                <br>
+                Personalized Training: Tailor your fitness plan to meet your unique goals.
+                <br>
+                Community Support: Join a community of like-minded individuals on the path to fitness.</p>
+        </div>
+        <div class="form-container">
+            <form action="">
+                <p>Full Name<input type="text"></p>
+                <p>Date of Birth<input type="date"></p>
+                <p>Gender
+                    <input class="gender-select" type="radio" id="male" name="gender" value="Male"><label for="Male">Male</label>
+                    <input class="gender-select" type="radio" id="female" name="gender" value="Female"><label for="Female">Female</label>
+                    <input class="gender-select" type="radio" id="non-binary" name="gender" value="Non-Binary"><label for="Non-Binary">Non-Binary</label>
+                </p>
+                <p>Phone Number<input type="number"></p>
+                <p>Address<input type="text"></p>
+                <p>Email<input type="email"></p>
+                <p>Password<input type="password"></p>
+                <p style="font-size: 18px;">Confirm Password<input type="password"></p>
+                <p><a href="#" class="register-button">Register</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

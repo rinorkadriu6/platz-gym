@@ -167,12 +167,14 @@ nav img {
   z-index: 1;
   align-items: start;
   padding: 30px;
-  display: flex; /* Add this line to make it a flex container */
-  justify-content: space-around; /* Add this line for spacing between cards */
+  display: flex;
+  /* Add this line to make it a flex container */
+  justify-content: space-around;
+  /* Add this line for spacing between cards */
   flex-wrap: wrap;
 }
 
-.membership-container h2{
+.membership-container h2 {
   font-size: 46px;
   margin-left: 20px;
   width: 100%;
@@ -189,9 +191,10 @@ nav img {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: #e7e7e7;
 }
 
-.membership-card ul{
+.membership-card ul {
   height: 200px;
 }
 
@@ -206,8 +209,70 @@ nav img {
   color: #000;
   text-decoration: none;
   z-index: 1;
-  /* margin-top: 150px; */
-  /* position: relative; */
-  /* top: 50%; */
+  transform: translateY(-50%);
+}
+
+.register-container {
+  width: 100%;
+  display: flex;
+}
+
+.register-text {
+  margin-top: 100px;
+  margin-left: 20px;
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  width: 50%;
+}
+
+.register-text p {
+  font-size: 22px;
+  color: #e7e7e7;
+}
+
+.form-container {
+  background-color: #d9d9d9;
+  height: 500px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  max-width: 450px;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+form {
+  width: 100%;
+  padding: 20px;
+  padding-top: 45px;
+  font-size: 22px;
+}
+
+form input {
+  border: none;
+  height: 25px;
+  width: 200px;
+  margin-top: 15px;
+}
+
+.gender-select {
+  width: auto;
+  margin: 10px;
+  font-size: 12px;
+}
+
+form p {
+  display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.register-button {
+  padding: 5px 30px;
+  background-color: #4a4a4a;
+  color: #000;
+  text-decoration: none;
+  z-index: 1;
   transform: translateY(-50%);
 }
