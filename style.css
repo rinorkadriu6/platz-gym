@@ -252,7 +252,7 @@ form input {
   border: none;
   height: 25px;
   width: 200px;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .gender-select {
@@ -263,16 +263,68 @@ form input {
 
 form p {
   display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
 }
 
 .register-button {
   padding: 5px 30px;
+  margin-top: 40px;
+  border-radius: 10px;
   background-color: #4a4a4a;
-  color: #000;
+  color: #fff;
   text-decoration: none;
   z-index: 1;
   transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container {
+  background-color: #d9d9d9;
+  height: 500px;
+  border-radius: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 430px;
+  margin-top: 20px;
+  margin-left: 150px;
+}
+
+.login-container form {
+  width: 100%;
+  padding: 20px;
+  padding-top: 45px;
+  font-size: 22px;
+}
+
+.login-container input {
+  border: none;
+  height: 25px;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.login-container p {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  padding: 5px 30px;
+  margin-top: 50px;
+  border-radius: 10px;
+  background-color: #4a4a4a;
+  color: #fff;
+  text-decoration: none;
+  z-index: 1;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
