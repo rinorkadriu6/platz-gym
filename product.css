@@ -5,6 +5,8 @@
 
 body {
     font-family: "Roboto";
+    background-color: #000;
+    color: #fff;
 }
 
 header {
@@ -83,4 +85,120 @@ nav img {
 
 .next-btn {
     right: 10px;
+}
+
+#sector-title {
+    width: 100%;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.product-sector {
+    text-align: center;
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product-card {
+    width: 250px;
+    padding: 15px;
+    margin: 10px;
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+    overflow: hidden;
+}
+
+.product-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.15);
+}
+
+.product-card a {
+    text-decoration: none;
+}
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.product-name {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 8px;
+}
+
+.rating {
+    color: #f39c12;
+    margin-bottom: 8px;
+}
+
+.price {
+    font-weight: bold;
+    color: #fff;
+}
+
+.site-footer {
+    background-color: #fff;
+    color: #000; 
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 25%; 
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: auto;
+}
+
+.quick-links {
+    text-align: left;
+}
+
+.quick-links a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.quick-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
 }
