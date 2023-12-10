@@ -316,7 +316,8 @@ form p {
 }
 
 .login-button {
-  padding: 5px 30px;
+  border: solid #4a4a4a 0.2px;
+  padding: 10px 30px;
   margin-top: 50px;
   border-radius: 10px;
   background-color: #4a4a4a;
@@ -327,4 +328,11 @@ form p {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background-color: #cccccc;
+  color: #000;
 }

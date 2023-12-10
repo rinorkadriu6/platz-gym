@@ -42,22 +42,24 @@
         </div>
         <div class="form-container">
             <form action="">
-                <p>Full Name<input type="text"></p>
-                <p>Date of Birth<input type="date"></p>
+                <p>Full Name<input id="full_name" type="text"></p>
+                <p>Date of Birth<input id="dob" type="date"></p>
                 <p>Gender
                     <input class="gender-select" type="radio" id="male" name="gender" value="Male"><label for="Male">Male</label>
                     <input class="gender-select" type="radio" id="female" name="gender" value="Female"><label for="Female">Female</label>
                     <input class="gender-select" type="radio" id="non-binary" name="gender" value="Non-Binary"><label for="Non-Binary">Non-Binary</label>
                 </p>
-                <p>Phone Number<input type="number"></p>
-                <p>Address<input type="text"></p>
-                <p>Email<input type="email"></p>
-                <p>Password<input type="password"></p>
-                <p style="font-size: 18px;">Confirm Password<input type="password"></p>
-                <a href="#" class="register-button">Register</a>
+                <p>Phone Number<input id="phone_number" type="number"></p>
+                <p>Address<input id="address" type="text"></p>
+                <p>Email<input id="email" type="email"></p>
+                <p>Password<input id="password" type="password"></p>
+                <p style="font-size: 18px;">Confirm Password<input id="confirm_password" type="password"></p>
+                <button class="register-button" id="register-button">Register</button>
             </form>
         </div>
     </div>
+
+    <script src="register.js"></script>
 </body>
 
 </html>
