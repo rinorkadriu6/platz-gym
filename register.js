@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const phoneNumberInput = document.getElementById('phone_number');
-        const phoneNumberRegex = /^\d{10}$/;
+        const phoneNumberRegex = /^\d{11}$/;
         if (!phoneNumberRegex.test(phoneNumberInput.value)) {
             alert('Please enter a valid 10-digit phone number.');
             return;
@@ -44,9 +44,19 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         const passwordInput = document.getElementById('password');
-        if (passwordInput.value.length < 8) {
-            alert('Password must be at least 8 characters long.');
-            return;
+        if (passwordInput.value.length < 4) {
+            alert('Password should be at least 4 characters long.');
+            return false;
+        }
+
+        else if (!/[A-Z]/.test(passwordInput.value)) {
+            alert('Password should contain at least one capital letter.');
+            return false;
+        } 
+
+        else if (!/[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?0-9]/.test(passwordInput.value)) {
+            alert('Password should contain at least one special character or number.');
+            return false;
         }
 
         const confirmPasswordInput = document.getElementById('confirm_password');
