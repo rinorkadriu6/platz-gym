@@ -1,0 +1,188 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+body {
+    font-family: "Roboto";
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 5px 20px;
+    text-align: center;
+}
+
+nav {
+    background-color: #000;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav img {
+    width: 125px;
+    height: auto;
+    margin-right: 100px;
+}
+
+.hero-section {
+    overflow: hidden;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.slide {
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    outline: none
+}
+
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+
+.latest-post,
+.regular-posts {
+    margin: 20px 0;
+}
+
+.blog-post {
+    margin-bottom: 20px;
+}
+
+.blog-list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog-card {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+.blog-card img {
+    max-width: 250px;
+    height: auto;
+    object-fit: cover;
+}
+
+.blog-card-content {
+    padding: 20px;
+    flex: 1;
+}
+
+.blog-card h3 {
+    margin-top: 0;
+}
+
+
+.site-footer {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-section {
+    width: 25%;
+    margin-bottom: 20px;
+}
+
+.social-icons {
+    text-align: right;
+}
+
+.social-icons a {
+    margin: 0 15px;
+}
+
+.social-icons img {
+    width: 50px;
+    height: auto;
+}
+
+.quick-links {
+    text-align: left;
+}
+
+.quick-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.quick-links h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+.copyright {
+    margin-top: 20px;
+    font-size: 14px;
+}
