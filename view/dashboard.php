@@ -17,7 +17,7 @@
                 <li><a href="index.php">Home</a></li>
                 <li><a href="memberships.html">Memberships</a></li>
                 <li><a href="product.html">Products</a></li>
-                <li><a href="product.html">Dashboard</a></li>
+                <li><a href="product.php">Dashboard</a></li>
                 <li><a href="about.html">About us</a></li>
             </ul>
             <a href="index.html"><img src="assets/logo-transparent.png" alt="logo" /></a>
@@ -34,9 +34,9 @@
             <h2>Dashboard</h2>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="/platz-gym/view/dash/users_table.php">Users</a></li>
+                <li><a href="/platz-gym/view/dash/users/users_table.php">Users</a></li>
                 <li><a href="#">Memberships</a></li>
-                <li><a href="#">Products</a></li>
+                <li><a href="/platz-gym/view/dash/products/products_table.php">Products</a></li>
                 <li><a href="#">Blogs</a></li>
             </ul>
         </aside>

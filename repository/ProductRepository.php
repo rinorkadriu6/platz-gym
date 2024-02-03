@@ -1,6 +1,6 @@
 <?php
 
-include_once "../database/DatabaseConnection.php";
+include_once __DIR__ . '/../database/DatabaseConnection.php';
 
 class ProductRepository
 {
@@ -16,6 +16,7 @@ class ProductRepository
     {
         $conn = $this->connection;
 
+        $id = $product->getId();
         $name = $product->getName();
         $price = $product->getPrice();
         $description = $product->getDescription();
@@ -23,11 +24,11 @@ class ProductRepository
         $inStock = $product->getInStock();
         $imagePath = $product->getImagePath();
 
-        $sql = "INSERT INTO Products (name, price, description, rating, inStock, imagePath) VALUES (?, ?, ?, ?, ?, ?)";
+        $sql = "INSERT INTO Products (id, name, price, description, rating, inStock, imagePath) VALUES (?, ?, ?, ?, ?, ?, ?)";
 
         $statement = $conn->prepare($sql);
 
-        $statement->execute([$name, $price, $description, $rating, $inStock, $imagePath]);
+        $statement->execute([$id, $name, $price, $description, $rating, $inStock, $imagePath]);
 
         echo "<script> alert('Product has been inserted successfully!'); </script>";
     }
@@ -39,7 +40,7 @@ class ProductRepository
         $sql = "SELECT * FROM Products";
 
         $statement = $conn->query($sql);
-        $products = $statement->fetchAll(PDO::FETCH_CLASS, 'Product');
+        $products = $statement->fetchAll();
 
         return $products;
     }
@@ -57,13 +58,13 @@ class ProductRepository
         return $product;
     }
 
-    public function updateProduct($id, $name, $price)
+    public function updateProduct($id, $name, $price, $description, $rating, $inStock, $imagePath)
     {
         $conn = $this->connection;
 
-        $sql = "UPDATE Products SET name=?, price=? WHERE id=?";
+        $sql = "UPDATE Products SET name=?, price=?, description=?, rating=?, inStock=?, imagePath=? WHERE id=?";
         $statement = $conn->prepare($sql);
-        $statement->execute([$name, $price, $id]);
+        $statement->execute([$name, $price, $description, $rating, $inStock, $imagePath, $id]);
 
         echo "<script>alert('Update was successful');</script>";
     }

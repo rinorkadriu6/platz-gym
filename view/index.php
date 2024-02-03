@@ -13,9 +13,9 @@
   <header>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="index.php">Home</a></li>
         <li><a href="memberships.html">Memberships</a></li>
-        <li><a href="product.html">Products</a></li>
+        <li><a href="product.php">Products</a></li>
         <li><a href="blog.html">Blog</a></li>
         <li><a href="about.html">About us</a></li>
       </ul>

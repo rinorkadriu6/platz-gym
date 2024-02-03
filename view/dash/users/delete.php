@@ -8,10 +8,10 @@ if (isset($_GET['id']) && !empty($_GET['id'])) {
 
     $userRepository->deleteUser($id);
 
-    header("Location: users_table.php");
+    header("Location: products_table.php");
     exit();
 } else {
-    header("Location: users_table.php");
+    header("Location: products_table.php");
     exit();
 }
 ?>

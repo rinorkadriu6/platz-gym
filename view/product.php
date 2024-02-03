@@ -1,3 +1,10 @@
+<?php
+include_once '../repository/ProductRepository.php';
+$productRepository = new ProductRepository();
+
+$products = $productRepository->getAllProducts();
+?>
+
 <html lang="en">
 
 <head>
@@ -15,7 +22,7 @@
             <ul>
                 <li><a href="index.php">Home</a></li>
                 <li><a href="memberships.html">Memberships</a></li>
-                <li><a href="product.html">Products</a></li>
+                <li><a href="product.php">Products</a></li>
                 <li><a href="blog.html">Blog</a></li>
                 <li><a href="about.html">About us</a></li>
             </ul>
@@ -39,43 +46,20 @@
     <h2 id="sector-title" style="font-size: 46px; font-family: Krona One;">ALL-TIME BEST SELLERS</h2>
     <div class="product-sector">
         <div class="products">
-            <div class="product-card">
-                <a href="">
-                    <img src="assets/protein.webp" alt="Product 1">
-                    <p class="product-name">ISO[H1] PROTEIN</p>
-                    <p class="rating">⭐⭐⭐⭐⭐</p>
-                    <p class="price">$19.99</p>
-                </a>
-            </div>
-
-            <div class="product-card">
-                <a href="">
-                    <img src="assets/Intra_R3__Intraworkout_Orange_PDP.webp" alt="Product 2">
-                    <p class="product-name">INTRA[R3]</p>
-                    <p class="rating">⭐⭐⭐⭐</p>
-                    <p class="price">$29.99</p>
-                </a>
-            </div>
-
-            <div class="product-card">
-                <a href="">
-                    <img src="assets/Stacked_Glutamine.webp" alt="Product 3">
-                    <p class="product-name">GLUTAMINE</p>
-                    <p class="rating">⭐⭐⭐⭐⭐</p>
-                    <p class="price">$24.99</p>
-                </a>
-            </div>
-
-            <div class="product-card">
-                <a href="">
-                    <img src="assets/Stacked_Purcaf_Organic_Caffeine.webp" alt="Product 4">
-                    <p class="product-name">PURCAF</p>
-                    <p class="rating">⭐⭐⭐⭐</p>
-                    <p class="price">$39.99</p>
-                </a>
-            </div>
+            <?php foreach ($products as $product) : ?>
+                <div class="product-card">
+                    <a href="">
+                        <!-- Use the product information dynamically -->
+                        <img src="assets/<?php echo $product['imagePath']; ?>" alt="<?php echo $product['name']; ?>">
+                        <p class="product-name"><?php echo $product['name']; ?></p>
+                        <p class="rating">⭐⭐⭐⭐⭐</p>
+                        <p class="price">$<?php echo $product['price']; ?></p>
+                    </a>
+                </div>
+            <?php endforeach; ?>
         </div>
     </div>
+
 
     <h2 id="sector-title" style="font-size: 46px; font-family: Krona One;">SHOP POPULAR BRAND WEAR</h2>
     <div class="product-sector">

@@ -55,4 +55,39 @@ class Product
     {
         return $this->imagePath;
     }
+
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
+
+    public function setName($name)
+    {
+        $this->name = $name;
+    }
+
+    public function setPrice($price)
+    {
+        $this->price = $price;
+    }
+
+    public function setDescription($description)
+    {
+        $this->description = $description;
+    }
+
+    public function setRating($rating)
+    {
+        $this->rating = $rating;
+    }
+
+    public function setInStock($inStock)
+    {
+        $this->inStock = $inStock;
+    }
+
+    public function setImagePath($imagePath)
+    {
+        $this->imagePath = $imagePath;
+    }
 }
