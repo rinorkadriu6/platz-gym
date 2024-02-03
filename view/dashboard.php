@@ -34,6 +34,7 @@
             <h2>Dashboard</h2>
             <ul>
                 <li><a href="#">Home</a></li>
+                <li><a href="/platz-gym/view/dash/users_table.php">Users</a></li>
                 <li><a href="#">Memberships</a></li>
                 <li><a href="#">Products</a></li>
                 <li><a href="#">Blogs</a></li>
