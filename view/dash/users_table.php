@@ -47,17 +47,17 @@
     <header>
         <nav>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="memberships.html">Memberships</a></li>
-                <li><a href="product.html">Products</a></li>
-                <li><a href="product.html">Dashboard</a></li>
-                <li><a href="about.html">About us</a></li>
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="../memberships.html">Memberships</a></li>
+                <li><a href="../product.html">Products</a></li>
+                <li><a href="../product.html">Dashboard</a></li>
+                <li><a href="../about.html">About us</a></li>
             </ul>
             <a href="index.html"><img src="../assets/logo-transparent.png" alt="logo" /></a>
             <ul>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="register.html">Register</a></li>
-                <li><a href="login.html">Log in</a></li>
+                <li><a href="../dashboard.php">Dashboard</a></li>
+                <li><a href="../register.html">Register</a></li>
+                <li><a href="../login.html">Log in</a></li>
             </ul>
         </nav>
     </header>
@@ -66,11 +66,11 @@
         <aside class="sidebar">
             <h2>Dashboard</h2>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Users</a></li>
-                <li><a href="#">Memberships</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">Blogs</a></li>
+                <li><a href="../dashboard.php">Home</a></li>
+                <li><a href="">Users</a></li>
+                <li><a href="">Memberships</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="">Blogs</a></li>
             </ul>
         </aside>
 
